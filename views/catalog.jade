@@ -1,0 +1,19 @@
+extends layout
+
+block content
+	div(style="float:left")
+		a(href="/signUp",align="left") Sign Up
+	div(align="right")
+		label Welcome, #{firstName} #{lastName}
+		a(href="/") Logout
+		hr
+	block showCase
+		div(align="center", height="100%")
+			h1 Book Catalog
+			for book in books
+				div.itemContainer
+					div.itemStyle
+						b
+							li Title : #{book.title}
+						i 
+							li  Model : #{book.author}

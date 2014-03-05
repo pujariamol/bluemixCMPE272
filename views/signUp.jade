@@ -1,0 +1,35 @@
+extends layout
+
+block content
+	div(align="center", height="100%")
+		h1 Junior Amazon SignUp Page
+		label#notification
+		table
+			tr
+				td
+					label First Name 
+				td
+					input#firstName
+			tr
+				td
+					label Last Name 
+				td
+					input#lastName
+			tr
+				td
+					label Email Address &nbsp
+				td
+					input#emailId
+			tr
+				td  
+					label Password &nbsp
+				td  
+					input#pwd
+			tr
+				td  
+					label Confirm Password &nbsp
+				td  
+					input#confirmPwd
+			tr    
+				td
+					button#submit(onclick="signUp()") Submit

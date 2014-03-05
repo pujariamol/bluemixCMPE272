@@ -1,0 +1,17 @@
+extends layout
+
+block content
+	div(style="float:left")
+		a(href="/signUp",align="left") Sign Up
+	div(align="right")
+		label Welcome, Guest
+		hr
+	div#notification
+	div(align="center")
+		h1 Book Store
+		label Username &nbsp
+		input#emailId
+		&nbsp
+		label Password &nbsp
+		input#password(type="password")
+		button#submit(onclick="signIn()") Submit
